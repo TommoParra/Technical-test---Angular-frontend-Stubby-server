@@ -10,11 +10,13 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { AirportCardComponent } from './airport-card/airport-card.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        AirportsListComponent
+        AirportsListComponent,
+        AirportCardComponent
     ],
     imports: [
         HttpClientModule,

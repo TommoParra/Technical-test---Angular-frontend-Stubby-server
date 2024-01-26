@@ -9,6 +9,8 @@ export class AirportsListService {
         'securityKey': 'some-key'
       });
 
+      
+
     constructor(private http: HttpClient) {
     }
 
@@ -19,7 +21,8 @@ export class AirportsListService {
 
     public getAirport(airportKey: string): Promise<Airport> {
         const url = 'http://localhost:1500/airport';
-        return this.http.post<Airport>(url, {key: airportKey}).toPromise();
+        const payload = { key: airportKey }; 
+        return this.http.post<Airport>(url, payload, { headers: this.headers }).toPromise();
     }
 
 }
