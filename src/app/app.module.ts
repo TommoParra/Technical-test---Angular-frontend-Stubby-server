@@ -12,13 +12,15 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { AirportCardComponent } from './airport-card/airport-card.component';
 import { HeaderComponent } from './header/header.component';
+import { AirportDetailComponent } from './airport-detail/airport-detail.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         AirportsListComponent,
         AirportCardComponent,
-        HeaderComponent
+        HeaderComponent,
+        AirportDetailComponent
     ],
     imports: [
         HttpClientModule,

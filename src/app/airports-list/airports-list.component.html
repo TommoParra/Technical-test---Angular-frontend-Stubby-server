@@ -1,13 +1,13 @@
-<div class="aiports-list" *ngIf="airportsList">
+<section class="aiports-list" *ngIf="airportsList">
     <h1>Airports List:</h1>
-    <div class="airports-list-containers" >
+    <article class="airports-list-containers" >
         <app-airport-card
       *ngFor="let airport of airportsList"
       [airport]="airport"
       (clickAirport)="clickAirport($event)"
     ></app-airport-card>
-    </div>
-</div>
+    </article>
+</section>
 <div *ngIf="!airportsList && !error">
     <mat-spinner></mat-spinner>
 </div>

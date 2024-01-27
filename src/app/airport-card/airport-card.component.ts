@@ -1,6 +1,6 @@
 // airport-card.component.ts
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Airport } from '../airports-list/airport';
+import { Airport } from '../interfaces/airport';
 
 @Component({
   selector: 'app-airport-card',

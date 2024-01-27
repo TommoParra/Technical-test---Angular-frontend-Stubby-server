@@ -1,4 +1,8 @@
 
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+/* Color variables */
 $color-primary-a:                     #FFCC00;
 $color-primary-b: #eae0c3;
 
@@ -14,5 +18,14 @@ $gray-75:                             #333; // color-primary-b--dark
 $color-black:                         #000;
 
 
+/* global styles */
 html, body { height: 100%; background: $gray-10}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'Nunito', sans-serif;}
+
+.content-wrapper {
+    max-width: 992px;
+    min-height: 90vh;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+

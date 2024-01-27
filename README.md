@@ -21,7 +21,7 @@ The responses from the server are already configured.
 
 ### Applicatión
 
-- Refactor the `airports-list-component` component so that all elements are reusable
+- Refactor the `airports-list-component` component so that all elements are reusable ✔✔✔
 - Create a screen with the airport detail
 - Control navigation between screens
 - Implement unit test in some component and some service

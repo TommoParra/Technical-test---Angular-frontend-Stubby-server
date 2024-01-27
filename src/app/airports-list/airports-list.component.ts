@@ -1,7 +1,7 @@
-// airports-list.component.ts
 import { Component, OnInit } from '@angular/core';
 import { AirportsListService } from './airports-list.service';
-import { Airport } from './airport';
+import { Airport } from '../interfaces/airport';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-airports-list',
@@ -12,7 +12,7 @@ export class AirportsListComponent implements OnInit {
   public airportsList?: Airport[];
   public error?: string;
 
-  constructor(private airportsListService: AirportsListService) {}
+  constructor(private airportsListService: AirportsListService, private router: Router) {}
 
   public ngOnInit(): void {
     this.airportsListService.getAllAirports().then((res) => {
@@ -24,6 +24,7 @@ export class AirportsListComponent implements OnInit {
 
   public async clickAirport(key: string): Promise<void> {
     const airport = await this.airportsListService.getAirport(key);
-    console.log(airport);
+    console.log('Navigating to airport:', airport);
+    this.router.navigate(['/airport', key]);
   }
 }

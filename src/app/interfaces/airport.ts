@@ -3,4 +3,7 @@ export interface Airport {
     name: string;
     country: string;
     city: string;
+    image?: string;
+    owner?: string;
+    build?: string;
 }

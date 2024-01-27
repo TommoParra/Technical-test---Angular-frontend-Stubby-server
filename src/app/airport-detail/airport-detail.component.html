@@ -1,0 +1,31 @@
+
+    <section class="airport-detail-hero">
+        <h1>{{selectedAirport?.name}} Airport</h1>
+        <img [src]="selectedAirport?.image" alt="">
+    </section>
+
+    <section class="airport-details">
+        <div class="detail">
+            <h3>Country: </h3>
+            <span>{{ selectedAirport?.country }}</span>
+        </div>
+        <div class="detail">
+            <h3>City: </h3>
+            <span>{{ selectedAirport?.city }}</span>
+        </div>
+        <div class="detail">
+            <h3>Owner: </h3>
+            <span>{{ selectedAirport?.owner }}</span>
+        </div>
+        <div class="detail">
+            <h3>Build Year: </h3>
+            <span>{{ selectedAirport?.build }}</span>
+        </div>
+
+        <div class="airport-content">
+            <p>Nulla varius nulla nec magna fermentum, iaculis porttitor lorem auctor. Nunc turpis mi, mattis ut ipsum pulvinar, pellentesque vestibulum est. Mauris tortor nibh, iaculis quis nisl in, varius tempor justo. Donec vitae mauris faucibus, iaculis dolor eu, faucibus lorem. Aenean aliquam, nunc quis suscipit vestibulum, eros mi eleifend elit, sit amet euismod neque diam eu nulla. Nunc sit amet lacus sit amet justo mollis imperdiet sit amet eget leo. Maecenas consequat arcu nibh, ut blandit urna molestie ut. Nulla vehicula nulla nisl, nec ultrices nisl scelerisque eu.</p>
+
+            <p>Nullam blandit maximus purus vel volutpat. Nullam tempus quam vitae lectus viverra gravida. Vestibulum mollis ante in nisi placerat, dapibus pharetra turpis commodo. Ut gravida porttitor ligula ut lobortis. Praesent ut odio maximus, malesuada neque eget, feugiat lectus. Vivamus scelerisque pretium hendrerit. Aenean nec dapibus mi, eu commodo dolor.</p>
+        </div>
+    </section>
+    
