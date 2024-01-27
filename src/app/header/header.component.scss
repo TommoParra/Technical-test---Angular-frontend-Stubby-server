@@ -1,0 +1,11 @@
+@import "../../styles";
+
+.header {
+    background: $gray-75;
+    color: $color-white;
+    padding: 20px;
+  }
+  
+  mat-toolbar {
+    background: $color-primary-a;
+  }
