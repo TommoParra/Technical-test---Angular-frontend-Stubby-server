@@ -15,7 +15,7 @@ const routes: Routes = [
     component: AirportsListComponent
   },
   {
-    path: 'airport/:key',
+    path: 'airportsList/:key',
     component: AirportDetailComponent,
     canActivate: [AuthGuard]
   }

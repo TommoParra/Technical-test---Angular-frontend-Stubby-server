@@ -32,3 +32,9 @@
 .airport-content {
     grid-column: 1/-1;
 }
+
+@media (width < 600px) {
+    .airport-details {
+        grid-template-columns: 1fr;
+    }
+  }

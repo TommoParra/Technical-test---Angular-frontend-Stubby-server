@@ -26,11 +26,11 @@ The responses from the server are already configured.
 - Control navigation between screens
 - Implement unit test in some component and some service ✔✔✔
 - Create a login (screen) to create the security Key and manage the session in the application:
-  - Show the username in the header
+  - Show the username in the header ✔✔✔
   - LogOut
-  - Access control to the page if it is logged
-  - Add `securityKey` to requests to get access
-- Control the state of the application via REDUX
+  - Access control to the page if it is logged ✔✔✔
+  - Add `securityKey` to requests to get access ✔✔✔
+- Control the state of the application via REDUX 𝕏𝕏𝕏
 
 ### Styles
 

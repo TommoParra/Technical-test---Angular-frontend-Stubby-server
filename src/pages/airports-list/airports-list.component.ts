@@ -32,6 +32,6 @@ export class AirportsListComponent implements OnInit {
   public async clickAirport(key: string): Promise<void> {
     const airport = await this.airportsListService.getAirport(key);
     console.log('Navigating to airport:', airport);
-    this.router.navigate(['/airport', key]);
+    this.router.navigate(['/airportsList', key]);
   }
 }
