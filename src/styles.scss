@@ -19,13 +19,15 @@ $color-black:                         #000;
 
 
 /* global styles */
+
+* {box-sizing: border-box;}
 html, body { height: 100%; background: $gray-10}
 body { margin: 0; font-family: 'Nunito', sans-serif;}
 
 .content-wrapper {
-    max-width: 992px;
-    min-height: 90vh;
+    width: 100%;
+    max-width: 920px;
+    display: flex;
     margin: auto;
-    padding: 2rem 1rem;
 }
 

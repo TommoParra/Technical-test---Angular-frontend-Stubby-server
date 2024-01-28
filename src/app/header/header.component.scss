@@ -1,11 +1,56 @@
 @import "../../styles";
 
-.header {
-    background: $gray-75;
-    color: $color-white;
-    padding: 20px;
-  }
+header {
   
   mat-toolbar {
-    background: $color-primary-a;
+    box-sizing: border-box;
+    padding: 10px;
+    background: $gray-60;
+    color: $color-white;
+    font-family: 'Nunito', sans-serif;
+    font-size: .75rem;
+    font-weight: 400;
+    .content-wrapper {
+      justify-content: space-between;
+    }
+    .logo-container {
+      display: flex;
+      gap: 16px;
+
+      img {
+        cursor: pointer;
+      }
+
+
+      .logo {
+        height: 32px;
+    
+      }
+}
+    
+  
+    .access-panel {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+  
+      &-option {
+        display: flex;
+        gap: 8px;
+        cursor: pointer;
+  
+        p {
+          font-weight: 400;
+          margin-bottom: 0;
+        }
+      }
+  
+      &-divider {
+        width: 1px;
+        height: 1rem;
+        margin: 0 8px;
+        background: $color-white;
+      }
+    }
   }
+}

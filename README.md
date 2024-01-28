@@ -22,9 +22,9 @@ The responses from the server are already configured.
 ### Applicatión
 
 - Refactor the `airports-list-component` component so that all elements are reusable ✔✔✔
-- Create a screen with the airport detail
+- Create a screen with the airport detail ✔✔✔
 - Control navigation between screens
-- Implement unit test in some component and some service
+- Implement unit test in some component and some service ✔✔✔
 - Create a login (screen) to create the security Key and manage the session in the application:
   - Show the username in the header
   - LogOut
