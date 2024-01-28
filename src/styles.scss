@@ -31,3 +31,46 @@ body { margin: 0; font-family: 'Nunito', sans-serif;}
     margin: auto;
 }
 
+.content-wrapper >  *:not(router-outlet) {
+    flex: 1 1 auto;
+}
+
+.content {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+   
+
+
+/* Global components */
+
+/* hero */
+.hero img{
+    border-radius: 8px;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+/* buttons */
+.btn {
+    padding: .6rem 2.1rem;
+    font-weight: bold;
+    border: none; 
+    border-radius: 30px;
+    font-size: 1.2rem; 
+    color: $color-black;
+    cursor: pointer;
+    &-yellow{
+        background-color: $color-primary-a;
+    } 
+}
+
+/* text */
+
+.page-header {
+    padding: 2rem 0 1rem 0;
+    margin: 0;
+}

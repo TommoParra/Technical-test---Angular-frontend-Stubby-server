@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {Airport} from '../interfaces/airport';
+import {Airport} from '../../app/interfaces/airport';
 
 @Injectable({providedIn: 'root'})
 export class AirportsListService {

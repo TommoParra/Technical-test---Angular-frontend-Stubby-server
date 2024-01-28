@@ -44,7 +44,6 @@ export class LoginComponent implements OnInit {
         },
         error => {
           console.error('Authentication error:', error);
-          // Handle unexpected errors or display a generic error message to the user
         }
       );
     }

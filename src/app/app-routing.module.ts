@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {AirportsListComponent} from './airports-list/airports-list.component';
-import { AirportDetailComponent } from './airport-detail/airport-detail.component';
+import {AirportsListComponent} from '../pages/airports-list/airports-list.component';
+import { AirportDetailComponent } from '../pages/airport-detail/airport-detail.component';
 import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [

@@ -1,10 +1,19 @@
 @import "../../styles";
 
 header {
+  display: grid;
+  background: $gray-60;
+  color: $color-white;
+  app-login {
+    border-top: 1px $gray-45 solid;
+}
   
   mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 920px;
+    margin: auto;
     box-sizing: border-box;
-    padding: 10px;
     background: $gray-60;
     color: $color-white;
     font-family: 'Nunito', sans-serif;

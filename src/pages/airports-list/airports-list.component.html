@@ -1,0 +1,23 @@
+<section class="aiports-list" *ngIf="airportsList">
+    <h1 class="page-header">Airports of the world</h1>
+    <section class="hero hero-airport-list">
+      <img src="assets/fpbg.webp" alt="">
+    </section>
+    <section class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec <strong>fringilla accumsan</strong>, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. <strong>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</strong>. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>
+      <p>Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. <strong>Aenean feugiat ex eu vestibulum vestibulum</strong>. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh.</p>
+    </section>
+    <section class="airports-list-containers" >
+      <app-airport-card
+        *ngFor="let airport of airportsList"
+        [airport]="airport"
+        (clickAirport)="clickAirport($event)"
+      ></app-airport-card>
+    </section>
+  </section>
+  <div *ngIf="!airportsList && !error">
+    <mat-spinner></mat-spinner>
+  </div>
+  <div *ngIf="error">
+    {{ error }}
+  </div>
