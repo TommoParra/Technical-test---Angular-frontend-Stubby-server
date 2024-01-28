@@ -6,7 +6,7 @@ import {Airport} from '../interfaces/airport';
 export class AirportsListService {
 
     private headers = new HttpHeaders({
-        'securityKey': 'some-key'
+        'securityKey': localStorage.getItem('securityKey') || 'default-key',
       });
 
       

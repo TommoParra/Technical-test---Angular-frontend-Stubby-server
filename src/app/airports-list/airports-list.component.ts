@@ -15,6 +15,13 @@ export class AirportsListComponent implements OnInit {
   constructor(private airportsListService: AirportsListService, private router: Router) {}
 
   public ngOnInit(): void {
+    const securityKey = localStorage.getItem('securityKey');
+
+    if (!securityKey) {
+      this.error = 'To see the airport list, please login.';
+      return;
+    }
+
     this.airportsListService.getAllAirports().then((res) => {
       this.airportsList = res;
     }).catch((error) => {

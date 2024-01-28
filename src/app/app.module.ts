@@ -5,7 +5,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {CommonModule} from '@angular/common';
 import {AirportsListComponent} from './airports-list/airports-list.component';
-import {HttpClientModule} from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -13,6 +13,9 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { AirportCardComponent } from './airport-card/airport-card.component';
 import { HeaderComponent } from './header/header.component';
 import { AirportDetailComponent } from './airport-detail/airport-detail.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { AuthInterceptor } from './interceptors/auth.interceptor';
 
 @NgModule({
     declarations: [
@@ -20,7 +23,8 @@ import { AirportDetailComponent } from './airport-detail/airport-detail.componen
         AirportsListComponent,
         AirportCardComponent,
         HeaderComponent,
-        AirportDetailComponent
+        AirportDetailComponent,
+        LoginComponent
     ],
     imports: [
         HttpClientModule,
@@ -30,9 +34,16 @@ import { AirportDetailComponent } from './airport-detail/airport-detail.componen
         NoopAnimationsModule,
         MatCardModule,
         MatToolbarModule,
-        MatProgressSpinnerModule
+        MatProgressSpinnerModule,
+        ReactiveFormsModule
     ],
-    providers: [],
+    providers: [
+        {
+            provide: HTTP_INTERCEPTORS,
+            useClass: AuthInterceptor,
+            multi: true,
+          },
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {
