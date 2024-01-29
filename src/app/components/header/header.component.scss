@@ -1,4 +1,4 @@
-@import "../../styles";
+@import "../../../styles";
 
 header {
   display: grid;
@@ -11,8 +11,6 @@ header {
   mat-toolbar {
     display: flex;
     justify-content: space-between;
-    max-width: 920px;
-    margin: auto;
     box-sizing: border-box;
     background: $gray-60;
     color: $color-white;
@@ -52,13 +50,6 @@ header {
           font-weight: 400;
           margin-bottom: 0;
         }
-      }
-  
-      &-divider {
-        width: 1px;
-        height: 1rem;
-        margin: 0 8px;
-        background: $color-white;
       }
     }
   }

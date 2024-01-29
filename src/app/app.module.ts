@@ -11,11 +11,12 @@ import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { AirportCardComponent } from './components/airport-card/airport-card.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './components/header/header.component';
 import { AirportDetailComponent } from '../pages/airport-detail/airport-detail.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -24,7 +25,8 @@ import { AuthInterceptor } from './interceptors/auth.interceptor';
         AirportCardComponent,
         HeaderComponent,
         AirportDetailComponent,
-        LoginComponent
+        LoginComponent,
+        FooterComponent
     ],
     imports: [
         HttpClientModule,

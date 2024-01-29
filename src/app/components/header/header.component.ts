@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../components/login/auth.service';
+import { AuthService } from '../login/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -17,18 +17,18 @@ export class HeaderComponent implements OnInit {
   }
 
   isLoggedIn(): boolean {
-    // Check if the user is logged in based on your authentication mechanism
+    
     return localStorage.getItem('securityKey') !== null;
   }
 
   logout(): void {
-    // Implement logout logic, e.g., clear the securityKey from localStorage
+    
     localStorage.removeItem('securityKey');
     window.location.reload();
   }
 
   login(): void {
-    // Your login logic here
-    this.showLoginButton = !this.showLoginButton; // Set the flag to hide the login button
+    
+    this.showLoginButton = !this.showLoginButton; 
   }
 }

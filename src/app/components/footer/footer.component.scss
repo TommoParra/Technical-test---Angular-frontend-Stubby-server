@@ -1,0 +1,31 @@
+@import "../../../styles";
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-black;
+}
+
+mat-toolbar {
+    justify-content: space-between;
+    font-size: 12px;
+    color: $color-white;
+}
+
+.footer-navbar ul {
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+}
+
+.footer-social-media {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (width < 600px) {
+    mat-toolbar {
+        flex-direction: column;
+        height: auto;
+    }
+  }

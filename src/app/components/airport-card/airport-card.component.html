@@ -1,4 +1,4 @@
-<mat-card class="example-card" (click)="onCardClick()">
+<mat-card class="example-card" (click)="onCardClick()" role="button" tabindex="0" role="button" tabindex="0" [attr.aria-label]="'Airport' + airport.name + ' details'">
     <mat-card-header>
       <mat-card-title>{{airport.name}}</mat-card-title>
       <mat-card-subtitle>{{airport.key}}</mat-card-subtitle>

@@ -9,7 +9,7 @@ describe('AirportDetailComponent', () => {
   let component: AirportDetailComponent;
   let fixture: ComponentFixture<AirportDetailComponent>;
 
-  // Create a mock ActivatedRoute with a paramMap
+  
   const mockActivatedRoute = {
     paramMap: of(convertToParamMap({ key: 'test-key' }))
   };
@@ -20,7 +20,7 @@ describe('AirportDetailComponent', () => {
       imports: [HttpClientTestingModule],
       providers: [
         AirportsListService,
-        { provide: ActivatedRoute, useValue: mockActivatedRoute } // Provide the mock ActivatedRoute
+        { provide: ActivatedRoute, useValue: mockActivatedRoute } 
       ],
     })
     .compileComponents();

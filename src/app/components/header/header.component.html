@@ -2,20 +2,20 @@
 <header>
     <mat-toolbar>
          <div class="logo-container">
-             <img class="logo" src="assets/Logo.svg" alt="Vueling Logo">
+             <img class="logo" src="assets/Logo.svg" alt="Vueling Logo" aria-label="Vueling Logo">
          </div>
          <div class="access-panel">
              <div *ngIf="isLoggedIn()" class="access-panel-option">
-                 <img src="assets/account-circle.svg" alt="User icon">
+                 <img src="assets/account-circle.svg" alt="User icon" aria-label="User Account">
                  <p>{{ username$ | async }}</p>
              </div>
-             <div *ngIf="isLoggedIn()" class="access-panel-divider"></div>
+             <div *ngIf="isLoggedIn()" class="divider"></div>
              <div *ngIf="isLoggedIn()" class="access-panel-option" (click)="logout()">
                  <p>Log out</p>
-                 <img src="assets/logout.svg" alt="Logout icon">
+                 <img src="assets/logout.svg" alt="Logout icon" aria-label="Logout">
              </div>
              <div *ngIf="!isLoggedIn()" class="access-panel-option" (click)="login()">
-                <img src="assets/account-circle.svg" alt="User icon">
+                <img src="assets/account-circle.svg" alt="User icon" aria-label="User Account">
                 <p>Login</p>
             </div>
          </div>

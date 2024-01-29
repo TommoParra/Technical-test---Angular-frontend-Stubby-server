@@ -12,7 +12,7 @@ export class AuthGuard implements CanActivate {
 
   canActivate(): boolean | Observable<boolean> | Promise<boolean> {
     if (!localStorage.getItem('securityKey')) {
-      // If no security key, navigate to the login page or perform other actions as needed
+      
       this.router.navigate(['/']);
       return false;
     }

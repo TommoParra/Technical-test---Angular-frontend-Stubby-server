@@ -24,6 +24,20 @@ $color-black:                         #000;
 html, body { height: 100%; background: $gray-10}
 body { margin: 0; font-family: 'Nunito', sans-serif;}
 
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+mat-toolbar {
+    max-width: 920px;
+    margin: auto;
+    background-color: transparent;
+}
+
 .content-wrapper {
     width: 100%;
     max-width: 920px;
@@ -67,6 +81,13 @@ body { margin: 0; font-family: 'Nunito', sans-serif;}
         background-color: $color-primary-a;
     } 
 }
+
+.divider {
+    width: 1px;
+    height: 1rem;
+    margin: 0 8px;
+    background: $color-white;
+  }
 
 /* text */
 

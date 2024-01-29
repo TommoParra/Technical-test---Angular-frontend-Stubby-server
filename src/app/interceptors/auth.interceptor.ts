@@ -22,19 +22,19 @@ export class AuthInterceptor implements HttpInterceptor {
       const errorResponse = {
         status: 401,
         statusText: errorMessage,
-        customError: true, // Add a custom property to indicate this is a custom error
+        customError: true,
       };
       return of(new HttpResponse(errorResponse));
     }
 
-    // Add the security key to the request headers
+    
     const authRequest = request.clone({
       setHeaders: { securityKey },
     });
 
     return next.handle(authRequest).pipe(
       catchError((error) => {
-        // Handle other errors here if needed
+        
         return of(error);
       })
     );
